@@ -802,21 +802,39 @@ body {
     @media (max-width: 767px) {
       .home-banner .home-avatar-in {
         border: 5px solid #fff; } }
-  /*  .home-banner .home-avatar-in:after {
+    .home-banner .home-avatar-in:after {
       content: "";
       padding-bottom: 100%;
       display: inline-block;
-      vertical-align: top; } */
+      vertical-align: top; }
     .home-banner .home-avatar-in img {
       position: absolute;
   top: 0;
   left: 0;
+  bottom : 0;
+  
+    }
+
+
+.home-banner .home-avatar-in {
+  position: relative;
+  border-radius: 50% 50% 0% 50%;
+  border: 15px solid #fff;
+  overflow: hidden;
+  z-index: 1;
+  width: 100%;
+  max-width: 300px; /* or any fixed size */
+  height: auto;
+}
+.home-banner .home-avatar-in img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50% 50% 0% 50%; /* Optional: to match container shape */
-  
-    }
+  position: relative;
+  border-radius: 50% 50% 0% 50%;
+}
+
+
   .home-banner .typo-box {
     padding-top: 50px;
     padding-bottom: 50px; }
