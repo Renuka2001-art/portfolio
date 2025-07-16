@@ -796,43 +796,32 @@ body {
   .home-banner .home-avatar-in {
     position: relative;
     border-radius: 50% 50% 0% 50%;
+    
+width: 320px; /* set a fixed size */
+  height: 320px;
+    
     border: 15px solid #fff;
     overflow: hidden;
     z-index: 1; }
     @media (max-width: 767px) {
       .home-banner .home-avatar-in {
         border: 5px solid #fff; } }
-    .home-banner .home-avatar-in:after {
-      content: "";
-      padding-bottom: 100%;
-      display: inline-block;
-      vertical-align: top; }
-    .home-banner .home-avatar-in img {
-      position: absolute;
-  top: 0;
-  left: 0;
-  bottom : 0;
-  
-    }
 
+ 
 
-.home-banner .home-avatar-in {
-  position: relative;
-  border-radius: 50% 50% 0% 50%;
-  border: 15px solid #fff;
-  overflow: hidden;
-  z-index: 1;
-  width: 100%;
-  max-width: 300px; /* or any fixed size */
-  height: auto;
-}
 .home-banner .home-avatar-in img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: relative;
-  border-radius: 50% 50% 0% 50%;
+  object-position: center;
+  display: block;
 }
+
+
+
+
+
+
 
 
   .home-banner .typo-box {
