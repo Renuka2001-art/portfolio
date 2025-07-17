@@ -100,6 +100,14 @@ Primary use:    pxdraft
         right: auto;
         width: 100%; } }
 
+.about-left {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: -30px; /* Move image slightly up */
+}
+
+
 /* Mobile 
 -----------------------------*/
 @media (max-width: 991px) {
