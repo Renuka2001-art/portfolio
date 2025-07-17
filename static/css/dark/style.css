@@ -104,8 +104,15 @@ Primary use:    pxdraft
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-top: -80px; /* Move image slightly up */
+  margin-top: -30px;
 }
+
+.about-left img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
 
 
 /* Mobile 
