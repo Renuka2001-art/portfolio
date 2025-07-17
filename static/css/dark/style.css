@@ -100,18 +100,6 @@ Primary use:    pxdraft
         right: auto;
         width: 100%; } }
 
-.about-left {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: -30px;
-}
-
-.about-left img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-}
 
 
 
@@ -546,6 +534,20 @@ mark {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
 
+
+
+.about-left {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: -30px;
+}
+
+.about-left img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
 /* ----------------------
 *	owl 
 ---------------------------*/
