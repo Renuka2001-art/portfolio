@@ -3,45 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <title>Tele Directory Details</title>
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Swiper CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+
   <style>
-    body { font-family: Arial; padding: 20px; }
-    .swiper-slide img { width: 100%; max-width: 800px; display: block; margin: 0 auto; border-radius: 10px; }
-    .description { margin-top: 20px; max-width: 800px; margin-left: auto; margin-right: auto; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+    }
+
+    .portfolio-details {
+      padding: 60px 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .swiper {
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .swiper-pagination {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .portfolio-description {
+      background: #fff;
+      padding: 30px;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .portfolio-description p {
+      margin: 0;
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
 
-  <h2 style="text-align:center;">Tele Directory</h2>
+  <section class="portfolio-details">
+    <div class="container">
+      <h2>Tele Directory</h2>
 
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="../assets/img/tele-directory/tele1.jpg" alt="tele1"></div>
-      <div class="swiper-slide"><img src="../assets/img/tele-directory/tele2.jpg" alt="tele2"></div>
-      <div class="swiper-slide"><img src="../assets/img/tele-directory/tele3.jpg" alt="tele3"></div>
+      <!-- Swiper Image Slider -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../assets/img/tele-directory/tele1.jpg" alt="tele1">
+          </div>
+          <div class="swiper-slide">
+            <img src="../assets/img/tele-directory/tele2.jpg" alt="tele2">
+          </div>
+          <div class="swiper-slide">
+            <img src="../assets/img/tele-directory/tele3.jpg" alt="tele3">
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Description -->
+      <div class="portfolio-description">
+        <p><strong>📌 Tele Directory App</strong><br>
+          • Built using HTML, CSS, Bootstrap, and JavaScript.<br>
+          • Responsive UI for HR to manage employee contacts.<br>
+          • Add/delete contacts without reloading the page.<br>
+          • Fully responsive across desktop and mobile devices.
+        </p>
+      </div>
     </div>
-    <div class="swiper-pagination"></div>
-  </div>
+  </section>
 
-  <div class="description">
-    <p>
-      📌 <strong>Tele Directory App</strong><br>
-      - Built using HTML, CSS, Bootstrap, and JavaScript.<br>
-      - Responsive UI for HR to manage employee contacts.<br>
-      - Add/delete contacts with no page reload.<br>
-      - Fully responsive on desktop and mobile.
-    </p>
-  </div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script>
     new Swiper('.swiper', {
       loop: true,
       pagination: {
         el: '.swiper-pagination',
-        clickable: true
-      }
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
     });
   </script>
+
 </body>
 </html>
